@@ -1,6 +1,7 @@
-Dossier de rendu        : raytracer
-Fichier de rendu        : camera.c, struct.h, utils.c (si besoin), 
-headers.h (si besoin)
+# Crée une image a partir d'un tableau de pixels
+
+Dossier de rendu        : raytracer <br>
+Fichier de rendu        : camera.c, struct.h, utils.c (si besoin), headers.h (si besoin)<br>
 Fonctions autorisées    : open, close, write
 ---
 
@@ -42,4 +43,4 @@ pixels[1][2].color.blue = 0;
 ```
 
 Resources utiles :
-    - [Image PPM](https://fr.wikipedia.org/wiki/Portable_pixmap#PPM)
+- [Image PPM](https://fr.wikipedia.org/wiki/Portable_pixmap#PPM)
