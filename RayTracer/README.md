@@ -7,12 +7,14 @@ Fonctions autorisées    : open, close, write
 
 Écrire une fonction qui prend en parametre un tableau de pixels a 2 
 dimensions ainsi que sa taille, et écrit une image ppm à partir de ce 
-tableau.
-Son prototype sera le suivant :
-    void save_ppm(int width, int height, Pixel **pixels);
+tableau.<br>
 
-Les pixels sont constitués de Color
-Les colors r, g, b sont des ints entre 0 et 255
+Son prototype sera le suivant :<br>
+```C
+void save_ppm(int width, int height, Pixel **pixels);
+```
+- Les pixels sont constitués de Color
+- Les colors r, g, b sont des ints entre 0 et 255
 
 Vous pouvez tester votre image avec ce tableau de pixels
 ```C
