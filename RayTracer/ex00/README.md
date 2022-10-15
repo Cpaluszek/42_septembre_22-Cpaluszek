@@ -5,7 +5,7 @@ Fichier de rendu        : camera.c, struct.h, utils.c (si besoin), headers.h (si
 Fonctions autorisées    : open, close, write
 ---
 
-Écrire une fonction qui prend en parametre un tableau de pixels a 2 
+Écrire une fonction qui prend en paramètres un tableau de pixels a 2 
 dimensions ainsi que sa taille, et écrit une image ppm à partir de ce 
 tableau.<br>
 
