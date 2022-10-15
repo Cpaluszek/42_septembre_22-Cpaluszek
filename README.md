@@ -1,4 +1,4 @@
-# 42_septembre_22-Cpaluszek
+# 42_septembre_22
 Sujets d'entraînements language C.
 
 ## Raytracing
