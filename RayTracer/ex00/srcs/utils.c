@@ -6,7 +6,7 @@
 /*   By: test_user <test@student.42.ft>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 20:36:32 by test_user         #+#    #+#             */
-/*   Updated: 2022/10/15 21:08:34 by test_user        ###   ########.fr       */
+/*   Updated: 2022/10/15 21:16:50 by test_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,23 @@ char	*ft_itoa(int nb)
 		num /= 10;
 	}
 	return (buffer);
+}
+
+char	*pixel_colors_tostr(t_Pixel pixel, char *dest)
+{
+	char	*c;
+
+	c = ft_itoa(pixel.color.red);
+	dest = ft_strcat(dest, c);
+	free(c);
+	dest = ft_strcat(dest, " ");
+	c = ft_itoa(pixel.color.green);
+	dest = ft_strcat(dest, c);
+	free(c);
+	dest = ft_strcat(dest, " ");
+	c = ft_itoa(pixel.color.blue);
+	dest = ft_strcat(dest, c);
+	free(c);
+	dest = ft_strcat(dest, "\n");
+	return (dest);
 }

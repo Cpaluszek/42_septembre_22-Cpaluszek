@@ -6,7 +6,7 @@
 /*   By: test_user <test@student.42.ft>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 20:34:48 by test_user         #+#    #+#             */
-/*   Updated: 2022/10/15 21:09:07 by test_user        ###   ########.fr       */
+/*   Updated: 2022/10/15 21:19:30 by test_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ char	*loop_pixels(int w, int h, t_Pixel **pixels, int len)
 	char	*content;
 	int		i;
 	int		j;
-	char	*c;
 
 	content = malloc (sizeof(char) * len + 1);
 	if (content == NULL)
@@ -81,18 +80,7 @@ char	*loop_pixels(int w, int h, t_Pixel **pixels, int len)
 		j = 0;
 		while (j < w)
 		{
-			c = ft_itoa(pixels[i][j].color.red);
-			content = ft_strcat(content, c);
-			free(c);
-			content = ft_strcat(content, " ");
-			c = ft_itoa(pixels[i][j].color.green);
-			content = ft_strcat(content, c);
-			free(c);
-			content = ft_strcat(content, " ");
-			c = ft_itoa(pixels[i][j].color.blue);
-			content = ft_strcat(content, c);
-			free(c);
-			content = ft_strcat(content, "\n");
+			content = pixel_colors_tostr(pixels[i][j], content);
 			j++;
 		}
 		i++;
