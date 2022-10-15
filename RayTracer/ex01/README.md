@@ -5,7 +5,7 @@ Fichier de rendu        : struct.h, utils.c, headers.h <br>
 Fonctions autorisées    : 
 ---
 
-Écrire une foncntion qui prend en paramètres un rayon et une sphère, et retourne 1 s'il y a une intersection. <br>
+Écrire une foncntion qui prend en paramètres un rayon et une sphère, et retourne 1 s'il y a au moins une intersection. <br>
 
 Son prototype sera le suivant :<br>
 ```C
