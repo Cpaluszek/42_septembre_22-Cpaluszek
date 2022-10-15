@@ -6,7 +6,7 @@
 /*   By: test_user <test@student.42.ft>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 20:34:48 by test_user         #+#    #+#             */
-/*   Updated: 2022/10/15 21:19:30 by test_user        ###   ########.fr       */
+/*   Updated: 2022/10/15 21:25:00 by test_user        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ void	save_ppm(int width, int height, t_Pixel **pixels)
 	int		fd;
 	char	*filename;
 	char	*content;
+	mode_t	mode;
 
 	filename = "img.ppm";
-	fd = open(filename, O_WRONLY);
+	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, mode);
 	if (fd == -1)
 	{
 		write(STDERR_FILENO, "Image can't be open.\n", 21);
